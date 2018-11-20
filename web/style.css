@@ -1,38 +1,37 @@
 body
 {
-    /*background-color: #E29BE7;*/
-    font-size: 1.2em;
+    background-color: #ffffbe;
+    font-size: 1rem;
     font-family: "Liberation Sans",sans-serif;
     margin: 0;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
+    background-image: url("/images/flauschis/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 a
 {
-    color: #1876fb;
+    color: #a900ff;
 }
 
 a:visited
 {
-    color: #a73bf1;
+    color: #5500ff;
 }
 
 /* Header  */
 header {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
 }
 header div
 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header div img
-{
-    height: 6em;
 }
 
 h1
@@ -59,35 +58,28 @@ header nav
 header nav a, header nav a:visited
 {
     font-family: "Lobster Two", sans-serif;
-    color: white;
+    color: #518637;
     text-decoration: none;
     margin: 0.3em;
     font-size: 1.3em;
 
 }
 
-/* Background Image */
-div.background, div.background * {
-    margin: 0;
-    padding: 0;
-}
-div.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0px;
-    z-index: -1;
-}
+/* Header Animation */
 
-div.background img {
-    width: 100%;
+body header div div.logo
+{
+    display: block;
+    background-image: url("/images/flauschis/flauschi_normal-normalsize.png");
+    width: 10rem;
+    height: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-div.background div.background-bottom {
-    background-color: #d6fee3;
-    height: 100%;
-    margin-top: -0.3em;
+body header div div.logo:hover
+{
+    background-image: url("/images/flauschis/flauschi_surprised-normalsize.png");
 }
-
 
 /* Main Content and Sidebar  */
 main
@@ -134,12 +126,18 @@ main article
     background-color: #FFFFFF;
     border-bottom-left-radius: 3.5em;
     border-top-right-radius: 3.5em;
-    box-shadow: 10px 10px 10px #C95ED1;
+    box-shadow: 10px 10px 10px #4aa21d;
+    font-family: sans-serif;
+}
+
+main article h2
+{
+    font-family: "Lobster Two";
 }
 
 main article:last-child
 {
-    margin-bottom: 0em;
+    margin-bottom: 0rem;
 }
 
 main article h2
@@ -171,6 +169,8 @@ main article img
     border-top-right-radius: 3em;
 }
 
+
+
 /* Footer */
 footer
 {
@@ -180,5 +180,5 @@ footer
 
 footer a
 {
-    margin: 0.3em;
+    margin: 3rem;
 }

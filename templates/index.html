@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block main %}
+<article>
+    {{ craft.entries.section("mainpage").one().markdown|markdown }}
+</article>
+{% endblock %}

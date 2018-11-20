@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<aside>
+    {{ entry.aside }}
+</aside>
+<article>
+    {{ entry.markdown|markdown }}
+</article>
+{% endblock %}

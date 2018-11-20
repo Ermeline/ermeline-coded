@@ -9,24 +9,20 @@
     {% endblock %}
 </head>
 <body>
-<div class="background">
-    <img src="/images/verlauf_header.svg">
-    <div class="background-bottom"></div>
-</div>
-<header>
-    <div>
-        <img class="logo" src="/images/flauschi_normal.svg" alt="Ermelines Flauschiversum">
-        <h1>Ermelines Flauschiversum<small>Mehr als nur eine Masche</small></h1>
-    </div>
-    <nav>
-        {% block nav %}
-            <a href="/index.html">Startseite</a>
-            <a href="/news.html">Aktuelles</a>
-            <a href="/anleitungen.html">Anleitungen</a>
-            <a href="/about.html">über Ermeline</a>
-            <a href="/impressum.html">Impressum</a>
-        {% endblock %}
-    </nav>
+    <header>
+        <div >
+            <div class="logo"></div>
+            <h1>Ermelines Flauschiversum<small>Mehr als nur eine Masche</small></h1>
+        </div>
+        <nav>
+            {% block nav %}
+                <a href="/">Startseite</a>
+                <a href="/news/">Aktuelles</a>
+                <a href="/post/">Anleitungen</a>
+                <a href="/about/">über Ermeline</a>
+                <a href="/impressum/">Impressum</a>
+            {% endblock %}
+        </nav>
 </header>
 <main>
     {% block main %}
@@ -35,7 +31,6 @@
 <footer>
     {% block footer %}
         <a href="/impressum.html">Impressum</a>
-        <a href="/impressum.html">Datenschutzerklärung</a>
     {% endblock %}
 </footer>
 </body>
