@@ -8,16 +8,13 @@ volumes:
 services:
     web:
       container_name: craftCMS
-      image: wyveo/craftcms-docker:latest
+      build: ./
       ports:
         - 80:80
       volumes:
         - craftcms-logs:/var/log
-        - craftcms-data:/usr/share/nginx/
-        # bind mount project data
-        - ./templates/:/media/templates/
-        - ./web/:/media/web/
-        - ./docker-deploy.sh:/docker-deploy.sh
+        - ./:/media/data/
+        #- craftcms-data:/usr/share/nginx/
       links:
         - postgres
         - redis
