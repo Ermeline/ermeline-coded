@@ -1,4 +1,9 @@
 {% extends "base.html" %}
 {% block main %}
-
+{% for entry in craft.entries.section("news") %}
+<article>
+    <a href="{{entry.url}}"><h2>{{entry.title}}</h2></a>
+    <p>{{entry.markdown}}</p>
+</article>
+{% endfor %}
 {% endblock %}

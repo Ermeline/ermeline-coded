@@ -2,7 +2,8 @@
 {% block main %}
 {% for entry in craft.entries.section("post") %}
     <article>
-    <a href="{{entry.url}}"><h2>{{entry.title}}</h2></a>
+        <a href="{{entry.url}}"><h2>{{entry.title}}</h2></a>
+        <p>{{entry.readmore}}</p>
     </article>
 {% endfor %}
 {% endblock %}

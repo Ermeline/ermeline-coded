@@ -1,13 +1,14 @@
 body
 {
-    background-color: #ffffbe;
+    /*background-color: #ffffbe;*/
+    background-color: #1a25a3;
     font-size: 1rem;
     font-family: "Liberation Sans",sans-serif;
     margin: 0;
     position: relative;
     top: 0;
     left: 0;
-    background-image: url("/images/flauschis/background.jpg");
+    background-image: url("/images/flauschis/Background_1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -40,8 +41,8 @@ h1
     margin-left: 0.5em;
     text-align: center;
     font-family: "Lobster Two", sans-serif;
-    color: #a41aff;
-    text-shadow: 2px 2px 5px #6841ff;
+    color: violet;
+    text-shadow: 2px 2px 5px lightyellow;
 }
 
 h1 small {
@@ -58,7 +59,7 @@ header nav
 header nav a, header nav a:visited
 {
     font-family: "Lobster Two", sans-serif;
-    color: #518637;
+    color: limegreen;
     text-decoration: none;
     margin: 0.3em;
     font-size: 1.3em;
@@ -86,36 +87,10 @@ main
 {
     margin-top: 1em;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-}
+    align-items: center;
 
-main aside
-{
-    margin-right: 5em;
-    /*background-color: #FFF172;*/
-}
-
-main aside ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-main aside ul li
-{
-    margin-bottom: 0.2em;
-}
-
-main aside ul li a
-{
-    text-decoration: none;
-}
-
-main aside ul h2
-{
-    margin: 0;
-    font-weight: normal;
-    font-size: 1em;
 }
 
 main article
@@ -123,21 +98,13 @@ main article
     padding: 2em;
     max-width: 40em;
     margin-bottom: 4em;
-    background-color: #FFFFFF;
+    background-color: #6841ff;
     border-bottom-left-radius: 3.5em;
     border-top-right-radius: 3.5em;
-    box-shadow: 10px 10px 10px #4aa21d;
+    box-shadow: 10px 10px 10px lightskyblue;
     font-family: sans-serif;
-}
+    color: white;
 
-main article h2
-{
-    font-family: "Lobster Two";
-}
-
-main article:last-child
-{
-    margin-bottom: 0rem;
 }
 
 main article h2
@@ -145,7 +112,10 @@ main article h2
     text-align: center;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    font-family: "Lobster Two";
+    color: lemonchiffon;
 }
+
 
 /* News Feed */
 main div.feed article img:first-child
