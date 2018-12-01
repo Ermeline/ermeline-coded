@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block main %}
-<img src="images/flauschi_normal.svg">
 <article>
+    {% for rel in entry.preview.all() %}
+    <img src="{{ rel.url }}" alt="{{ rel.filename }}">
+    {% endfor %}
     {{ entry.markdown|markdown }}
 </article>
 {% endblock %}

@@ -3,6 +3,9 @@
 {% for entry in craft.entries.section("post") %}
     <article>
         <a href="{{entry.url}}"><h2>{{entry.title}}</h2></a>
+        {% for rel in entry.preview.all() %}
+        <img src="{{ rel.url }}" alt="{{ rel.filename }}">
+        {% endfor %}
         <p>{{entry.readmore}}</p>
     </article>
 {% endfor %}

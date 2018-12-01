@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block main %}
     <article>
+        <h2>{{ entry.title }}</h2>
+        {% for rel in entry.preview.all() %}
+            <img src="{{ rel.url }}" alt="{{ rel.filename }}">
+        {% endfor %}
+        {{ entry.preview.filename }}
         {{ entry.markdown|markdown }}
     </article>
 {% endblock %}

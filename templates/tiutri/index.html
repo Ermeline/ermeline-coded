@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block main %}
-{% for entry in craft.entries.section("news") %}
+{% for entry in craft.entries.section("tipps_und_tricks") %}
 <article>
     <a href="{{entry.url}}"><h2>{{entry.title}}</h2></a>
     <p>{{entry.markdown}}</p>
